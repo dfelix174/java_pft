@@ -74,11 +74,32 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/DistanceBetweenDots.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="5" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/DistanceTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/SquareTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,6 +159,7 @@
         <option value="$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/DistanceBetweenDots.java" />
         <option value="$PROJECT_DIR$/sandbox/build.gradle" />
         <option value="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/SquareTests.java" />
+        <option value="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/DistanceTests.java" />
       </list>
     </option>
   </component>
@@ -252,7 +274,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SquareTests">
+  <component name="RunManager" selected="JUnit.DistanceTests">
     <configuration name="DistanceBetweenDots" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.DistanceBetweenDots" />
       <module name="sandbox.main" />
@@ -269,6 +291,21 @@
     <configuration name="MyFirstProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.MyFirstProgram" />
       <module name="sandbox.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DistanceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.DistanceTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -290,6 +327,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DistanceTests" />
         <item itemvalue="JUnit.SquareTests" />
         <item itemvalue="Application.DistanceBetweenDots" />
         <item itemvalue="Application.MyFirstProgram" />
@@ -310,32 +348,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SquareTests - 2021.02.04 at 22h 23m 51s.xml">
-      <configuration name="SquareTests" configurationId="JUnit" />
+    <history-entry file="DistanceTests - 2021.02.04 at 22h 56m 13s.xml">
+      <configuration name="DistanceTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SquareTests - 2021.02.04 at 22h 24m 41s.xml">
-      <configuration name="SquareTests" configurationId="JUnit" />
+    <history-entry file="DistanceTests - 2021.02.04 at 22h 56m 22s.xml">
+      <configuration name="DistanceTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SquareTests - 2021.02.04 at 22h 32m 48s.xml">
-      <configuration name="SquareTests" configurationId="JUnit" />
+    <history-entry file="DistanceTests - 2021.02.04 at 22h 56m 43s.xml">
+      <configuration name="DistanceTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SquareTests - 2021.02.04 at 22h 33m 14s.xml">
-      <configuration name="SquareTests" configurationId="JUnit" />
+    <history-entry file="DistanceTests - 2021.02.04 at 22h 57m 15s.xml">
+      <configuration name="DistanceTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SquareTests - 2021.02.04 at 22h 33m 22s.xml">
-      <configuration name="SquareTests" configurationId="JUnit" />
+    <history-entry file="DistanceTests - 2021.02.04 at 22h 58m 17s.xml">
+      <configuration name="DistanceTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SquareTests - 2021.02.04 at 22h 38m 30s.xml">
-      <configuration name="SquareTests" configurationId="JUnit" />
+    <history-entry file="DistanceTests - 2021.02.04 at 22h 58m 55s.xml">
+      <configuration name="DistanceTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SquareTests - 2021.02.04 at 22h 39m 43s.xml">
-      <configuration name="SquareTests" configurationId="JUnit" />
+    <history-entry file="DistanceTests - 2021.02.04 at 22h 59m 17s.xml">
+      <configuration name="DistanceTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SquareTests - 2021.02.04 at 22h 39m 55s.xml">
-      <configuration name="SquareTests" configurationId="JUnit" />
+    <history-entry file="DistanceTests - 2021.02.04 at 23h 00m 15s.xml">
+      <configuration name="DistanceTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SquareTests - 2021.02.04 at 22h 40m 07s.xml">
-      <configuration name="SquareTests" configurationId="JUnit" />
+    <history-entry file="DistanceTests - 2021.02.04 at 23h 00m 26s.xml">
+      <configuration name="DistanceTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DistanceTests - 2021.02.04 at 23h 00m 33s.xml">
+      <configuration name="DistanceTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -425,13 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/DistanceBetweenDots.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/MyFirstProgram.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -441,8 +475,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/SquareTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/DistanceBetweenDots.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/DistanceTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
