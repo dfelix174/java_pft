@@ -18,7 +18,7 @@ public class ContactModificationTests extends TestBase {
     }
     app.getNavigationHelper().gotoHomePage();
     int before = app.getContactHelper().getContactCount();
-    app.getContactHelper().selectContact();
+    app.getContactHelper().selectContact(before - 1);
     app.getContactHelper().initContacModification();
     app.getContactHelper().fillContactForms(new ContactData
             ("Dmytro3", "Rudenko2", "Ukraine Kiev", "38044",
