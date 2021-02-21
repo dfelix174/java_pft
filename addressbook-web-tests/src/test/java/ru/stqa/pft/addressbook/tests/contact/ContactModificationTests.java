@@ -10,6 +10,13 @@ public class ContactModificationTests extends TestBase {
   @Test
   public void testContactModification() {
     app.getNavigationHelper().gotoHomePage();
+    if(! app.getContactHelper().isThereAContact()){
+      app.getContactHelper().createContact(new ContactData
+              ("Dmytro", null, "Ukraine Kiev", "38044", "38063",
+                      "38066", "38097", "fel_1@gmail.com", "fel_2@gmail.com",
+                      "fel_3@gmail.com", "6", "September", "1989", "test1"), true);
+    }
+    app.getNavigationHelper().gotoHomePage();
     int before = app.getContactHelper().getContactCount();
     app.getContactHelper().selectContact();
     app.getContactHelper().initContacModification();
