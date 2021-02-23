@@ -78,15 +78,33 @@ public class ContactHelper extends HelperBase {
   return wd.findElements(By.name("selected[]")).size();
   }
 
+//
+//  public List<ContactData> getContactList() {
+//    List<ContactData> contacts = new ArrayList<ContactData>();
+//    List<WebElement> rows = wd.findElements(By.cssSelector("tr[name='entry']"));
+//
+//    for (WebElement row : rows) {
+//      List<WebElement> cells =  row.findElements(By.tagName("td"));
+//      String id = cells.get(0).getAttribute("value");
+//      String lastname = cells.get(1).getText();
+//      String firstname = cells.get(2).getText();
+//      String address = cells.get(3).getText();
+//      ContactData contact = new ContactData(id, firstname, lastname, address, null, null, null, null, null, null, null, null, null, null, null);
+//      contacts.add(contact);
+//    }
+//    return contacts;
+//  }
+
+
   public List<ContactData> getContactList() {
     List<ContactData> contacts = new ArrayList<ContactData>();
     List<WebElement> rows = wd.findElements(By.cssSelector("tr[name='entry']"));
     for (WebElement row : rows) {
-      String id = row.findElement(By.cssSelector("td:nth-child(1) input")).getAttribute("value");
+      int id = Integer.parseInt(row.findElement(By.cssSelector("td:nth-child(1) input")).getAttribute("value"));
       String lastname = row.findElement(By.cssSelector("td:nth-child(2)")).getText();
       String firstname = row.findElement(By.cssSelector("td:nth-child(3)")).getText();
       String address = row.findElement(By.cssSelector("td:nth-child(4)")).getText();
-      ContactData contact = new ContactData(firstname, lastname, address, null, null, null, null, null, null, null, null, null, null, null);
+      ContactData contact = new ContactData(id, firstname, lastname, address, null, null, null, null, null, null, null, null, null, null, null);
       contacts.add(contact);
     }
     return contacts;
