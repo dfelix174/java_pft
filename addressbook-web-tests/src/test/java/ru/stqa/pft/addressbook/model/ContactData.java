@@ -3,58 +3,21 @@ package ru.stqa.pft.addressbook.model;
 import java.util.Objects;
 
 public class ContactData {
-  private int id;
-  private final String firstname;
-  private final String lastname;
-  private final String address;
-  private final String telhome;
-  private final String telmobile;
-  private final String telwork;
-  private final String telfax;
-  private final String emailfirst;
-  private final String emailsecond;
-  private final String emailthird;
-  private final String bday;
-  private final String bmonth;
-  private final String byear;
-  private final String group;
-
-  public ContactData(int id, String firstname, String lastname, String address, String telhome, String telmobile, String telwork, String telfax, String emailfirst, String emailsecond, String emailthird, String bday, String bmonth, String byear, String group) {
-    this.id = id;
-    this.firstname = firstname;
-    this.lastname = lastname;
-    this.address = address;
-    this.telhome = telhome;
-    this.telmobile = telmobile;
-    this.telwork = telwork;
-    this.telfax = telfax;
-    this.emailfirst = emailfirst;
-    this.emailsecond = emailsecond;
-    this.emailthird = emailthird;
-    this.bday = bday;
-    this.bmonth = bmonth;
-    this.byear = byear;
-    this.group = group;
-  }
-
-
-  public ContactData(String firstname, String lastname, String address, String telhome, String telmobile, String telwork, String telfax, String emailfirst, String emailsecond, String emailthird, String bday, String bmonth, String byear, String group) {
-    this.id = Integer.MAX_VALUE;
-    this.firstname = firstname;
-    this.lastname = lastname;
-    this.address = address;
-    this.telhome = telhome;
-    this.telmobile = telmobile;
-    this.telwork = telwork;
-    this.telfax = telfax;
-    this.emailfirst = emailfirst;
-    this.emailsecond = emailsecond;
-    this.emailthird = emailthird;
-    this.bday = bday;
-    this.bmonth = bmonth;
-    this.byear = byear;
-    this.group = group;
-  }
+  private int id = Integer.MAX_VALUE;
+  private String firstname;
+  private String lastname;
+  private String address;
+  private String telhome;
+  private String telmobile;
+  private String telwork;
+  private String telfax;
+  private String emailfirst;
+  private String emailsecond;
+  private String emailthird;
+  private String bday;
+  private String bmonth;
+  private String byear;
+  private String group;
 
   public int getId() { return id; }
 
@@ -114,8 +77,79 @@ public class ContactData {
     return group;
   }
 
-  public void setId(int id) {
+  public ContactData withId(int id) {
     this.id = id;
+    return this;
+  }
+
+  public ContactData withFirstname(String firstname) {
+    this.firstname = firstname;
+    return this;
+  }
+
+  public ContactData withLastname(String lastname) {
+    this.lastname = lastname;
+    return this;
+  }
+
+  public ContactData withAddress(String address) {
+    this.address = address;
+    return this;
+  }
+
+  public ContactData withTelhome(String telhome) {
+    this.telhome = telhome;
+    return this;
+  }
+
+  public ContactData withTelmobile(String telmobile) {
+    this.telmobile = telmobile;
+    return this;
+  }
+
+  public ContactData withTelwork(String telwork) {
+    this.telwork = telwork;
+    return this;
+  }
+
+  public ContactData withTelfax(String telfax) {
+    this.telfax = telfax;
+    return this;
+  }
+
+  public ContactData withEmailfirst(String emailfirst) {
+    this.emailfirst = emailfirst;
+    return this;
+  }
+
+  public ContactData withEmailsecond(String emailsecond) {
+    this.emailsecond = emailsecond;
+    return this;
+  }
+
+  public ContactData withEmailthird(String emailthird) {
+    this.emailthird = emailthird;
+    return this;
+  }
+
+  public ContactData withBday(String bday) {
+    this.bday = bday;
+    return this;
+  }
+
+  public ContactData withBmonth(String bmonth) {
+    this.bmonth = bmonth;
+    return this;
+  }
+
+  public ContactData withByear(String byear) {
+    this.byear = byear;
+    return this;
+  }
+
+  public ContactData withGroup(String group) {
+    this.group = group;
+    return this;
   }
 
   @Override
