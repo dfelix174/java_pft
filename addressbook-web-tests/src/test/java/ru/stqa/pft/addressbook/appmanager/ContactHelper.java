@@ -70,6 +70,19 @@ public class ContactHelper extends HelperBase {
     submitContactCreation();
   }
 
+
+  public void modifyContact(List<ContactData> before, ContactData contact) {
+    initContacModification(before.size());
+    fillContactForms(contact, false);
+    submitContacModification();
+  }
+
+  public void deleteContact(int index) {
+    selectContact(index);
+    initContacDeletion();
+  }
+
+
   public boolean isThereAContact() {
     return isElementPresent(By.name("selected[]"));
   }
