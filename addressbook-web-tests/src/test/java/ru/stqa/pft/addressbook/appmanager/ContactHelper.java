@@ -8,9 +8,7 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
@@ -72,18 +70,20 @@ public class ContactHelper extends HelperBase {
     initContactCreation();
     fillContactForms(contact, b);
     submitContactCreation();
+    contactCache = null;
   }
-
 
   public void modify(ContactData contact) {
     initContacModificationById(contact.getId());
     fillContactForms(contact, false);
     submitContacModification();
+    contactCache = null;
   }
 
   public void delete(ContactData contact) {
     selectContactById(contact.getId());
     initContacDeletion();
+    contactCache = null;
   }
 
 
@@ -91,7 +91,7 @@ public class ContactHelper extends HelperBase {
     return isElementPresent(By.name("selected[]"));
   }
 
-//
+
 //  public List<ContactData> getContactList() {
 //    List<ContactData> contacts = new ArrayList<ContactData>();
 //    List<WebElement> rows = wd.findElements(By.cssSelector("tr[name='entry']"));
@@ -108,9 +108,14 @@ public class ContactHelper extends HelperBase {
 //    return contacts;
 //  }
 
+  private Contacts contactCache = null;
 
   public Contacts all() {
-    Contacts contacts = new Contacts();
+    if (contactCache != null){
+      return new Contacts(contactCache);
+    }
+
+    contactCache = new Contacts();
     List<WebElement> rows = wd.findElements(By.cssSelector("tr[name='entry']"));
     for (WebElement row : rows) {
       int id = Integer.parseInt(row.findElement(By.cssSelector("td:nth-child(1) input")).getAttribute("value"));
@@ -118,9 +123,9 @@ public class ContactHelper extends HelperBase {
       String firstname = row.findElement(By.cssSelector("td:nth-child(3)")).getText();
       String address = row.findElement(By.cssSelector("td:nth-child(4)")).getText();
       ContactData contact = new ContactData ().withId(id).withFirstname(firstname).withLastname(lastname).withAddress(address);
-      contacts.add(contact);
+      contactCache.add(contact);
     }
-    return contacts;
+    return new Contacts(contactCache);
   }
 
 }
