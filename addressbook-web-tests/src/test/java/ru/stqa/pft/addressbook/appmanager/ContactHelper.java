@@ -8,7 +8,9 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
@@ -51,6 +53,11 @@ public class ContactHelper extends HelperBase {
     wd.findElements(By.name("selected[]")).get(index).click();
   }
 
+
+  public void selectContactById(int id) {
+    wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
+  }
+
   public void initContacDeletion() {
     click(By.xpath("//input[@value='Delete']"));
     wd.switchTo().alert().accept();
@@ -77,8 +84,13 @@ public class ContactHelper extends HelperBase {
     submitContacModification();
   }
 
-  public void deleteContact(int index) {
+  public void delete(int index) {
     selectContact(index);
+    initContacDeletion();
+  }
+
+  public void delete(ContactData contact) {
+    selectContactById(contact.getId());
     initContacDeletion();
   }
 
@@ -124,5 +136,19 @@ public class ContactHelper extends HelperBase {
   }
 
 
+
+  public Set<ContactData> all() {
+    Set<ContactData> contacts = new HashSet<ContactData>();
+    List<WebElement> rows = wd.findElements(By.cssSelector("tr[name='entry']"));
+    for (WebElement row : rows) {
+      int id = Integer.parseInt(row.findElement(By.cssSelector("td:nth-child(1) input")).getAttribute("value"));
+      String lastname = row.findElement(By.cssSelector("td:nth-child(2)")).getText();
+      String firstname = row.findElement(By.cssSelector("td:nth-child(3)")).getText();
+      String address = row.findElement(By.cssSelector("td:nth-child(4)")).getText();
+      ContactData contact = new ContactData ().withId(id).withFirstname(firstname).withLastname(lastname).withAddress(address);
+      contacts.add(contact);
+    }
+    return contacts;
+  }
 
 }
