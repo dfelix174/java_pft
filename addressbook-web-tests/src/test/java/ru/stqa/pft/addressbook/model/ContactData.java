@@ -18,6 +18,11 @@ public class ContactData {
   private String bmonth;
   private String byear;
   private String group;
+  private String allPhones;
+
+
+
+  public String getAllPhones() {return allPhones;  }
 
   public int getId() { return id; }
 
@@ -79,6 +84,11 @@ public class ContactData {
 
   public ContactData withId(int id) {
     this.id = id;
+    return this;
+  }
+
+  public ContactData withAllPhones(String allPhones) {
+    this.allPhones = allPhones;
     return this;
   }
 
