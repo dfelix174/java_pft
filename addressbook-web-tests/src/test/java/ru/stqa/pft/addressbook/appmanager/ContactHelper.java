@@ -109,11 +109,13 @@ public class ContactHelper extends HelperBase {
       String lastname = row.findElement(By.cssSelector("td:nth-child(2)")).getText();
       String firstname = row.findElement(By.cssSelector("td:nth-child(3)")).getText();
       String address = row.findElement(By.cssSelector("td:nth-child(4)")).getText();
-      //String[] phones = row.findElement(By.cssSelector("td:nth-child(6)")).getText().split("\n");
+      String allMails = row.findElement(By.cssSelector("td:nth-child(5)")).getText();
       String allPhones = row.findElement(By.cssSelector("td:nth-child(6)")).getText();
       ContactData contact = new ContactData().withId(id).withFirstname(firstname).withLastname(lastname)
-              .withAddress(address).withAllPhones(allPhones);
+              .withAddress(address).withAllPhones(allPhones).withAllMails(allMails);
       contactCache.add(contact);
+
+      //String[] phones = row.findElement(By.cssSelector("td:nth-child(6)")).getText().split("\n");
     }
     return new Contacts(contactCache);
   }
@@ -125,9 +127,14 @@ public class ContactHelper extends HelperBase {
     String home = wd.findElement(By.name("home")).getAttribute("value");
     String mobile = wd.findElement(By.name("mobile")).getAttribute("value");
     String work = wd.findElement(By.name("work")).getAttribute("value");
+    String address = wd.findElement(By.name("address")).getAttribute("value");
+    String email = wd.findElement(By.name("email")).getAttribute("value");
+    String email2 = wd.findElement(By.name("email2")).getAttribute("value");
+    String email3 = wd.findElement(By.name("email3")).getAttribute("value");
     wd.navigate().back();
     return new ContactData().withId(contact.getId()).withFirstname(firstname)
-            .withLastname(lastname).withTelhome(home).withTelmobile(mobile).withTelwork(work);
+            .withLastname(lastname).withTelhome(home).withTelmobile(mobile).withTelwork(work).withAddress(address)
+            .withEmailfirst(email).withEmailsecond(email2).withEmailthird(email3);
   }
 
 

@@ -19,12 +19,14 @@ public class ContactData {
   private String byear;
   private String group;
   private String allPhones;
+  private String allMails;
 
-
-
-  public String getAllPhones() {return allPhones;  }
 
   public int getId() { return id; }
+
+  public String getAllMails() {return allMails;  }
+
+  public String getAllPhones() {return allPhones;  }
 
   public String getFirstname() {
     return firstname;
@@ -84,6 +86,12 @@ public class ContactData {
 
   public ContactData withId(int id) {
     this.id = id;
+    return this;
+  }
+
+
+  public ContactData withAllMails(String allMails) {
+    this.allMails = allMails;
     return this;
   }
 
@@ -187,4 +195,5 @@ public class ContactData {
   public int hashCode() {
     return Objects.hash(id, firstname, lastname, address);
   }
+
 }
