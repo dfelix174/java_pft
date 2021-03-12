@@ -35,6 +35,7 @@ public class ContactHelper extends HelperBase {
     typedropdown("bday", contactData.getBday(), "//option[@value='6']");
     typedropdown("bmonth", contactData.getBmonth(), "//option[@value='September']");
     type(By.name("byear"), contactData.getByear());
+    attach(By.name("photo"), contactData.getPhoto());
 
     if (creation) {
       new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
