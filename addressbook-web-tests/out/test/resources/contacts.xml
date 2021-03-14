@@ -1,0 +1,162 @@
+<list>
+  <contact>
+    <firstname>Dmytro 0</firstname>
+    <lastname>Rudenko 0</lastname>
+    <address>Ukraine Kiev 0</address>
+    <telhome>380440</telhome>
+    <telmobile>380630</telmobile>
+    <telwork>380660</telwork>
+    <telfax>380970</telfax>
+    <emailfirst>fel_0@gmail.com</emailfirst>
+    <emailsecond>zoom_0@gmail.com</emailsecond>
+    <emailthird>admin_0@gmail.com</emailthird>
+    <bday>1</bday>
+    <bmonth>September</bmonth>
+    <byear>1980</byear>
+    <group>test7</group>
+  </contact>
+  <contact>
+    <firstname>Dmytro 1</firstname>
+    <lastname>Rudenko 1</lastname>
+    <address>Ukraine Kiev 1</address>
+    <telhome>380441</telhome>
+    <telmobile>380631</telmobile>
+    <telwork>380661</telwork>
+    <telfax>380971</telfax>
+    <emailfirst>fel_1@gmail.com</emailfirst>
+    <emailsecond>zoom_1@gmail.com</emailsecond>
+    <emailthird>admin_1@gmail.com</emailthird>
+    <bday>2</bday>
+    <bmonth>September</bmonth>
+    <byear>1981</byear>
+    <group>test7</group>
+  </contact>
+  <contact>
+    <firstname>Dmytro 2</firstname>
+    <lastname>Rudenko 2</lastname>
+    <address>Ukraine Kiev 2</address>
+    <telhome>380442</telhome>
+    <telmobile>380632</telmobile>
+    <telwork>380662</telwork>
+    <telfax>380972</telfax>
+    <emailfirst>fel_2@gmail.com</emailfirst>
+    <emailsecond>zoom_2@gmail.com</emailsecond>
+    <emailthird>admin_2@gmail.com</emailthird>
+    <bday>3</bday>
+    <bmonth>September</bmonth>
+    <byear>1982</byear>
+    <group>test7</group>
+  </contact>
+  <contact>
+    <firstname>Dmytro 3</firstname>
+    <lastname>Rudenko 3</lastname>
+    <address>Ukraine Kiev 3</address>
+    <telhome>380443</telhome>
+    <telmobile>380633</telmobile>
+    <telwork>380663</telwork>
+    <telfax>380973</telfax>
+    <emailfirst>fel_3@gmail.com</emailfirst>
+    <emailsecond>zoom_3@gmail.com</emailsecond>
+    <emailthird>admin_3@gmail.com</emailthird>
+    <bday>4</bday>
+    <bmonth>September</bmonth>
+    <byear>1983</byear>
+    <group>test7</group>
+  </contact>
+  <contact>
+    <firstname>Dmytro 4</firstname>
+    <lastname>Rudenko 4</lastname>
+    <address>Ukraine Kiev 4</address>
+    <telhome>380444</telhome>
+    <telmobile>380634</telmobile>
+    <telwork>380664</telwork>
+    <telfax>380974</telfax>
+    <emailfirst>fel_4@gmail.com</emailfirst>
+    <emailsecond>zoom_4@gmail.com</emailsecond>
+    <emailthird>admin_4@gmail.com</emailthird>
+    <bday>5</bday>
+    <bmonth>September</bmonth>
+    <byear>1984</byear>
+    <group>test7</group>
+  </contact>
+  <contact>
+    <firstname>Dmytro 5</firstname>
+    <lastname>Rudenko 5</lastname>
+    <address>Ukraine Kiev 5</address>
+    <telhome>380445</telhome>
+    <telmobile>380635</telmobile>
+    <telwork>380665</telwork>
+    <telfax>380975</telfax>
+    <emailfirst>fel_5@gmail.com</emailfirst>
+    <emailsecond>zoom_5@gmail.com</emailsecond>
+    <emailthird>admin_5@gmail.com</emailthird>
+    <bday>6</bday>
+    <bmonth>September</bmonth>
+    <byear>1985</byear>
+    <group>test7</group>
+  </contact>
+  <contact>
+    <firstname>Dmytro 6</firstname>
+    <lastname>Rudenko 6</lastname>
+    <address>Ukraine Kiev 6</address>
+    <telhome>380446</telhome>
+    <telmobile>380636</telmobile>
+    <telwork>380666</telwork>
+    <telfax>380976</telfax>
+    <emailfirst>fel_6@gmail.com</emailfirst>
+    <emailsecond>zoom_6@gmail.com</emailsecond>
+    <emailthird>admin_6@gmail.com</emailthird>
+    <bday>7</bday>
+    <bmonth>September</bmonth>
+    <byear>1986</byear>
+    <group>test7</group>
+  </contact>
+  <contact>
+    <firstname>Dmytro 7</firstname>
+    <lastname>Rudenko 7</lastname>
+    <address>Ukraine Kiev 7</address>
+    <telhome>380447</telhome>
+    <telmobile>380637</telmobile>
+    <telwork>380667</telwork>
+    <telfax>380977</telfax>
+    <emailfirst>fel_7@gmail.com</emailfirst>
+    <emailsecond>zoom_7@gmail.com</emailsecond>
+    <emailthird>admin_7@gmail.com</emailthird>
+    <bday>8</bday>
+    <bmonth>September</bmonth>
+    <byear>1987</byear>
+    <group>test7</group>
+  </contact>
+  <contact>
+    <firstname>Dmytro 8</firstname>
+    <lastname>Rudenko 8</lastname>
+    <address>Ukraine Kiev 8</address>
+    <telhome>380448</telhome>
+    <telmobile>380638</telmobile>
+    <telwork>380668</telwork>
+    <telfax>380978</telfax>
+    <emailfirst>fel_8@gmail.com</emailfirst>
+    <emailsecond>zoom_8@gmail.com</emailsecond>
+    <emailthird>admin_8@gmail.com</emailthird>
+    <bday>9</bday>
+    <bmonth>September</bmonth>
+    <byear>1988</byear>
+    <group>test7</group>
+  </contact>
+  <contact>
+    <firstname>Dmytro 9</firstname>
+    <lastname>Rudenko 9</lastname>
+    <address>Ukraine Kiev 9</address>
+    <telhome>380449</telhome>
+    <telmobile>380639</telmobile>
+    <telwork>380669</telwork>
+    <telfax>380979</telfax>
+    <emailfirst>fel_9@gmail.com</emailfirst>
+    <emailsecond>zoom_9@gmail.com</emailsecond>
+    <emailthird>admin_9@gmail.com</emailthird>
+    <bday>10</bday>
+    <bmonth>September</bmonth>
+    <byear>1989</byear>
+    <group>test7</group>
+  </contact>
+</list>
