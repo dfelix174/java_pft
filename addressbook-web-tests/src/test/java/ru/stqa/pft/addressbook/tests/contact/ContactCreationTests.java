@@ -23,37 +23,37 @@ public class ContactCreationTests extends TestBase {
   public Iterator<Object[]> validContactsFromCsv() throws IOException {
     File photo = new File("src/test/resources/image.jpg");
     List<Object[]> list = new ArrayList<Object[]>();
-    BufferedReader reader = new BufferedReader (new FileReader(new File("src/test/resources/contacts.csv")));
-    String line = reader.readLine();
-    while (line != null){
-      String[] split = line.split(";");
-      list.add(new Object[]{new ContactData().withFirstname (split[0]).withLastname(split[1]).withAddress(split[2])
-              .withTelhome(split[3]).withTelmobile(split[4]).withTelwork(split[5]).withTelfax(split[6])
-              .withEmailfirst(split[7]).withEmailsecond(split[8]).withEmailthird(split[9])
-              .withBday(split[10]).withBmonth(split[11]).withPhoto(photo).withByear(split[12]).withGroup(split[13])});
-      line = reader.readLine();
+
+    try (BufferedReader reader = new BufferedReader (new FileReader(new File("src/test/resources/contacts.csv")))) {
+      String line = reader.readLine();
+      while (line != null){
+        String[] split = line.split(";");
+        list.add(new Object[]{new ContactData().withFirstname (split[0]).withLastname(split[1]).withAddress(split[2])
+                .withTelhome(split[3]).withTelmobile(split[4]).withTelwork(split[5]).withTelfax(split[6])
+                .withEmailfirst(split[7]).withEmailsecond(split[8]).withEmailthird(split[9])
+                .withBday(split[10]).withBmonth(split[11]).withPhoto(photo).withByear(split[12]).withGroup(split[13])});
+        line = reader.readLine();
+      }
+      return list.iterator();
     }
-    return list.iterator();
-    //Dmytro 0;Rudenko 0;Ukraine Kiev 0;380440;380630;380660;380970;fel_0@gmail.com;zoom_0@gmail.com;admin_0@gmail.com;1;September;1980;test7
   }
 
   @DataProvider
   public Iterator<Object[]> validContactsFromJson() throws IOException {
     File photo = new File("src/test/resources/image.jpg");
     //List<Object[]> list = new ArrayList<Object[]>();
-    BufferedReader reader = new BufferedReader (new FileReader(new File("src/test/resources/contacts.json")));
-    String json = "";
-    String line = reader.readLine();
-    while (line != null){
-      json += line;
-      line = reader.readLine();
+    try (BufferedReader reader = new BufferedReader (new FileReader(new File("src/test/resources/contacts.json")))) {
+      String json = "";
+      String line = reader.readLine();
+      while (line != null){
+        json += line;
+        line = reader.readLine();
+      }
+
+      Gson gson = new Gson();
+      List<ContactData> contacts = gson.fromJson(json, new TypeToken<List<ContactData>>(){}.getType());
+      return contacts.stream().map((g) -> new Object[] {g}).collect(Collectors.toList()).iterator();
     }
-
-    Gson gson = new Gson();
-    List<ContactData> contacts = gson.fromJson(json, new TypeToken<List<ContactData>>(){}.getType());
-    return contacts.stream().map((g) -> new Object[] {g}).collect(Collectors.toList()).iterator();
-
-    //return list.iterator();
   }
 
   @Test(dataProvider = "validContactsFromJson")
