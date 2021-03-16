@@ -8,7 +8,6 @@ import ru.stqa.pft.addressbook.tests.TestBase;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.*;
-import static org.testng.Assert.assertEquals;
 
 public class ContactModificationTests extends TestBase {
 
@@ -19,7 +18,7 @@ public class ContactModificationTests extends TestBase {
       app.contact().create( new ContactData().withFirstname ("Dmytro").withAddress("Ukraine Kiev")
               .withTelhome("38044").withTelmobile("38063").withTelwork("38066").withTelfax("38097")
               .withEmailfirst("fel_1@gmail.com").withEmailsecond("fel_2@gmail.com").withEmailthird("fel_3@gmail.com")
-              .withBday("6").withBmonth("September").withByear("1989").withGroup("test1"),true);
+              .withBday("6").withBmonth("September").withByear("1989").withGroup("test 0"),true);
     }
     app.goTo().homePage();
   }

@@ -13,38 +13,6 @@
     "bday": "1",
     "bmonth": "September",
     "byear": "1980",
-    "group": "test7"
-  },
-  {
-    "firstname": "Dmytro 1",
-    "lastname": "Rudenko 1",
-    "address": "Ukraine Kiev 1",
-    "telhome": "380441",
-    "telmobile": "380631",
-    "telwork": "380661",
-    "telfax": "380971",
-    "emailfirst": "fel_1@gmail.com",
-    "emailsecond": "zoom_1@gmail.com",
-    "emailthird": "admin_1@gmail.com",
-    "bday": "2",
-    "bmonth": "September",
-    "byear": "1981",
-    "group": "test7"
-  },
-  {
-    "firstname": "Dmytro 2",
-    "lastname": "Rudenko 2",
-    "address": "Ukraine Kiev 2",
-    "telhome": "380442",
-    "telmobile": "380632",
-    "telwork": "380662",
-    "telfax": "380972",
-    "emailfirst": "fel_2@gmail.com",
-    "emailsecond": "zoom_2@gmail.com",
-    "emailthird": "admin_2@gmail.com",
-    "bday": "3",
-    "bmonth": "September",
-    "byear": "1982",
-    "group": "test7"
+    "group": "test 0"
   }
 ]

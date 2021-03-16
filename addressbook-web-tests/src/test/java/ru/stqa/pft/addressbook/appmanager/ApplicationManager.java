@@ -23,7 +23,7 @@ public class ApplicationManager {
   private ContactHelper contactHelper;
   private String browser;
 
-  public ApplicationManager(String browser) throws IOException {
+  public ApplicationManager(String browser) {
     this.browser = browser;
     properties = new Properties();
   }
