@@ -15,7 +15,6 @@ import java.util.Objects;
 @XStreamAlias("group")
 @Entity
 @Table(name = "group_list")
-
 public class GroupData {
   @XStreamOmitField
   @Id
@@ -24,7 +23,6 @@ public class GroupData {
 
   @Expose
   @Column(name = "group_name")
-  @Type(type = "text")
   private String name;
 
   @Expose
