@@ -12,18 +12,18 @@ public class ContactAddressTests extends TestBase {
 
   @BeforeMethod
   public void ensurePreconditions (){
-    app.goTo().homePage();
-    if(app.contact().all().size() == 0){
+    if(app.db().contacts().size() == 0){
+      app.goTo().homePage();
       app.contact().create( new ContactData().withLastname ("Rudenko").withFirstname ("Dmytro").withAddress("Ukraine Kiev")
               .withTelhome("38044").withTelmobile("38063").withTelwork("38066").withTelfax("38097")
               .withEmailfirst("fel_1@gmail.com").withEmailsecond("fel_2@gmail.com").withEmailthird("fel_3@gmail.com")
               .withBday("6").withBmonth("September").withByear("1989").withGroup("test 0"),true);
     }
-    app.goTo().homePage();
   }
 
   @Test
   public void testContactAddress() {
+    app.goTo().homePage();
     ContactData contact = app.contact().all().iterator().next();
     ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
 

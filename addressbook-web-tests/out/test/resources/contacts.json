@@ -13,6 +13,7 @@
     "bday": "1",
     "bmonth": "September",
     "byear": "1980",
-    "group": "test 0"
+    "group": "test 0",
+    "photo": "src/test/resources/image.jpg"
   }
 ]
