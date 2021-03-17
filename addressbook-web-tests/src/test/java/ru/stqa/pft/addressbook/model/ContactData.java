@@ -253,16 +253,6 @@ public class ContactData {
   }
 
   @Override
-  public String toString() {
-    return "ContactData{" +
-            "id=" + id +
-            ", firstname='" + firstname + '\'' +
-            ", lastname='" + lastname + '\'' +
-            ", address='" + address + '\'' +
-            '}';
-  }
-
-  @Override
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
@@ -270,12 +260,41 @@ public class ContactData {
     return id == that.id &&
             Objects.equals(firstname, that.firstname) &&
             Objects.equals(lastname, that.lastname) &&
-            Objects.equals(address, that.address);
+            Objects.equals(address, that.address) &&
+            Objects.equals(telhome, that.telhome) &&
+            Objects.equals(telmobile, that.telmobile) &&
+            Objects.equals(telwork, that.telwork) &&
+            Objects.equals(telfax, that.telfax) &&
+            Objects.equals(emailfirst, that.emailfirst) &&
+            Objects.equals(emailsecond, that.emailsecond) &&
+            Objects.equals(emailthird, that.emailthird) &&
+            Objects.equals(byear, that.byear);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, firstname, lastname, address);
+    return Objects.hash(id, firstname, lastname, address, telhome, telmobile, telwork,
+            telfax, emailfirst, emailsecond, emailthird, byear);
+  }
+
+  @Override
+  public String toString() {
+    return "ContactData{" +
+            "id=" + id +
+            ", firstname='" + firstname + '\'' +
+            ", lastname='" + lastname + '\'' +
+            ", address='" + address + '\'' +
+            ", telhome='" + telhome + '\'' +
+            ", telmobile='" + telmobile + '\'' +
+            ", telwork='" + telwork + '\'' +
+            ", telfax='" + telfax + '\'' +
+            ", emailfirst='" + emailfirst + '\'' +
+            ", emailsecond='" + emailsecond + '\'' +
+            ", emailthird='" + emailthird + '\'' +
+            ", bmonth='" + bmonth + '\'' +
+            ", byear='" + byear + '\'' +
+            ", group='" + group + '\'' +
+            '}';
   }
 
 }
