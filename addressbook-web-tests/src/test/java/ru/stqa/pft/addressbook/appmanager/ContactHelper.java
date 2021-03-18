@@ -102,7 +102,6 @@ public class ContactHelper extends HelperBase {
     if (contactCache != null){
       return new Contacts(contactCache);
     }
-
     contactCache = new Contacts();
     List<WebElement> rows = wd.findElements(By.cssSelector("tr[name='entry']"));
     for (WebElement row : rows) {
