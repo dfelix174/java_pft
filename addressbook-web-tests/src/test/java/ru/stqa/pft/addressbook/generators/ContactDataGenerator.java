@@ -84,8 +84,7 @@ public class ContactDataGenerator {
                 , contact.getEmailthird()
                 , contact.getBday()
                 , contact.getBmonth()
-                , contact.getByear()
-                , contact.getGroup()));
+                , contact.getByear()));
       }
     }
   }
@@ -106,8 +105,7 @@ public class ContactDataGenerator {
               .withEmailthird(String.format("admin_%s@gmail.com", i))
               .withBday(String.format("%s", (1+i)))
               .withBmonth(("September"))
-              .withByear(String.format("198%s", i))
-              .withGroup(("test7")));
+              .withByear(String.format("198%s", i)));
     }
     return contacts;
   }
