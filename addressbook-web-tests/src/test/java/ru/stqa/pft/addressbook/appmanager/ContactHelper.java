@@ -33,8 +33,8 @@ public class ContactHelper extends HelperBase {
     type(By.name("email"), contactData.getEmailfirst());
     type(By.name("email2"), contactData.getEmailsecond());
     type(By.name("email3"), contactData.getEmailthird());
-    typedropdown("bday", contactData.getBday(), "//option[@value='6']");
-    typedropdown("bmonth", contactData.getBmonth(), "//option[@value='September']");
+    typedropdown("bday", contactData.getBday(), "//option[@value='" + contactData.getBday() + "']");
+    typedropdown("bmonth", contactData.getBmonth(), "//option[@value='" + contactData.getBmonth() + "']");
     type(By.name("byear"), contactData.getByear());
     attach(By.name("photo"), contactData.getPhoto());
 

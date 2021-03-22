@@ -1,6 +1,6 @@
 [
   {
-    "firstname": "Dmytro 0",
+    "firstname": "Dmytro 174",
     "lastname": "Rudenko 0",
     "address": "Ukraine Kiev 0",
     "telhome": "380440",
@@ -10,8 +10,8 @@
     "emailfirst": "fel_0@gmail.com",
     "emailsecond": "zoom_0@gmail.com",
     "emailthird": "admin_0@gmail.com",
-    "bday": "1",
-    "bmonth": "September",
+    "bday": "15",
+    "bmonth": "July",
     "byear": "1980",
     "group": "test 0",
     "photo": "src/test/resources/image.jpg"

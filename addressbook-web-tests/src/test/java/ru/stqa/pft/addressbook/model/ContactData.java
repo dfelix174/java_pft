@@ -266,13 +266,15 @@ public class ContactData {
             Objects.equals(emailfirst, that.emailfirst) &&
             Objects.equals(emailsecond, that.emailsecond) &&
             Objects.equals(emailthird, that.emailthird) &&
-            Objects.equals(byear, that.byear);
+            Objects.equals(bday, that.bday) &&
+            Objects.equals(bmonth, that.bmonth) &&
+            Objects.equals(byear, that.byear) &&
+            Objects.equals(groups, that.groups);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, firstname, lastname, address, telhome, telmobile, telwork,
-            telfax, emailfirst, emailsecond, emailthird, byear);
+    return Objects.hash(id, firstname, lastname, address, telhome, telmobile, telwork, telfax, emailfirst, emailsecond, emailthird, bday, bmonth, byear, groups);
   }
 
   @Override
