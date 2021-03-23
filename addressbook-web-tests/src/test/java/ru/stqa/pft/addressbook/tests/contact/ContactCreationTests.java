@@ -57,7 +57,7 @@ public class ContactCreationTests extends TestBase {
     }
   }
 
-  @Test(dataProvider = "validContactsFromJson")
+  @Test(enabled = false, dataProvider = "validContactsFromJson")
   public void testContactCreationWithFile(ContactData contact) {
     Groups groups = app.db().groups();
     contact.inGroup(groups.iterator().next());
@@ -74,7 +74,7 @@ public class ContactCreationTests extends TestBase {
 
 
 
-  @Test(enabled = false)
+  @Test
   public void testContactCreation() {
     File photo = new File("src/test/resources/image.jpg");
     Groups groups = app.db().groups();
