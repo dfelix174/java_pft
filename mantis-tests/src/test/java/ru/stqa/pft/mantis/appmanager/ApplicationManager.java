@@ -11,12 +11,14 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.MatchResult;
 
 public class ApplicationManager {
   private final Properties properties;
   private WebDriver wd;
 
   private String browser;
+  private RegistrationHelper registrationHelper;
 
 
   public ApplicationManager(String browser)  {
@@ -61,5 +63,12 @@ public class ApplicationManager {
       properties.getProperty("web.adminPassword");
     }
     return wd;
+  }
+
+  public RegistrationHelper registration() {
+    if(registrationHelper == null){
+      registrationHelper = new RegistrationHelper(this);
+    }
+    return registrationHelper;
   }
 }
