@@ -2,6 +2,7 @@ package ru.stqa.pft.mantis.appmanager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import ch.qos.logback.core.db.DBHelper;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -21,6 +22,7 @@ public class ApplicationManager {
   private FtpHelper ftp;
   private MailHelper mailHelper;
   private JamesHelper jamesHelper;
+  private DbHelper dbHelper;
 
 
   public ApplicationManager(String browser)  {
@@ -93,5 +95,9 @@ public class ApplicationManager {
       jamesHelper = new JamesHelper(this);
     }
     return  jamesHelper;
+  }
+
+  public DbHelper db() {
+    return dbHelper;
   }
 }
