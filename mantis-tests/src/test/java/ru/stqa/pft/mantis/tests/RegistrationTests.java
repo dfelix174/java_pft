@@ -8,7 +8,10 @@ import ru.lanwen.verbalregex.VerbalExpression;
 import ru.stqa.pft.mantis.model.MailMessage;
 
 import javax.mail.MessagingException;
+import javax.xml.rpc.ServiceException;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.rmi.RemoteException;
 import java.util.List;
 
 import static org.testng.Assert.assertTrue;
@@ -21,7 +24,9 @@ public class RegistrationTests extends TestBase {
   }
 
   @Test
-  public void testRegistration() throws IOException, MessagingException {
+  public void testRegistration() throws IOException, MessagingException, ServiceException {
+    skipIfNotFixed(1);
+
     long now = System.currentTimeMillis();
     String user = String.format("user%s", now);
     String password = "password";
@@ -33,7 +38,6 @@ public class RegistrationTests extends TestBase {
     String confirmationLink = findConfirmationLink(mailMessages, email);
     app.registration().finish(confirmationLink, password);
     assertTrue(app.newSession().login(user, password));
-
   }
 
   private String  findConfirmationLink(List<MailMessage> mailMessages, String email) {
